@@ -21,4 +21,4 @@ toutiao.com
 
 ## 截图
 
-![](E:\DnsBlocker\Screenshot_2023-12-06-18-25-59-151_top.weixiansen574.DnsBlocker.jpg)
+![Screenshot_2023-12-06-18-25-59-151_top.weixiansen574.DnsBlocker.jpg](Screenshot_2023-12-06-18-25-59-151_top.weixiansen574.DnsBlocker.jpg)
