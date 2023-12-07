@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+def currentTimeMillis = System.currentTimeMillis();
+android {
+    namespace 'top.weixiansen574.DnsBlocker'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "top.weixiansen574.DnsBlocker"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        //versionName "1.0_dev_"+currentTimeMillis
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures{
+        buildConfig = true;
+    }
+}
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    compileOnly files('libs/XposedBridgeApi-54.jar')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

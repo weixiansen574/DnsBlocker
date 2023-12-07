@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="搜索"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+    <item android:id="@+id/settings"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="更多">
+        <menu>
+            <item
+                android:id="@+id/print_blocked_host_name"
+                android:checkable="true"
+                android:title="打印已屏蔽的域名"/>
+            <item
+                android:id="@+id/print_passed_host_name"
+                android:checkable="true"
+                android:title="打印未屏蔽的域名"/>
+        </menu>
+    </item>
+</menu>
